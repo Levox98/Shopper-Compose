@@ -12,8 +12,8 @@ interface ShopItemDao {
     @Insert
     suspend fun insertShopItem(shopItemDataEntity: ShopItemDataEntity)
 
-    @Delete
-    suspend fun deleteShopItem(shopItemDataEntity: ShopItemDataEntity)
+    @Query("DELETE FROM shopItem WHERE id = :id")
+    suspend fun deleteShopItem(id: Int)
 
     @Query("SELECT * FROM shopItem")
     fun getAllShopItems(): Flow<List<ShopItemDataEntity>>

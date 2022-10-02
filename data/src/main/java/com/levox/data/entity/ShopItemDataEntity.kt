@@ -11,5 +11,7 @@ data class ShopItemDataEntity(
     val name: String,
     val amount: Int
 ) {
-    fun toDomain() = ShopItem(name, amount)
+    fun toDomain() = ShopItem(id, name, amount)
 }
+
+fun ShopItem.toData() = ShopItemDataEntity(id, name, amount)
