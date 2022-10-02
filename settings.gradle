@@ -16,7 +16,6 @@ rootProject.name = "ComposeShopper"
 include ':app'
 include ':domain'
 include ':data'
-include ':common'
 include ':ui-shopping-cart'
 include ':ui-shopping-item'
 include ':base-ui'
