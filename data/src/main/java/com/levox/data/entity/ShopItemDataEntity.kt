@@ -1,8 +1,8 @@
-package com.levox.data.entities
+package com.levox.data.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.levox.domain.entities.ShopItem
+import com.levox.domain.entity.ShopItem
 
 @Entity(tableName = "shopItem")
 data class ShopItemDataEntity(

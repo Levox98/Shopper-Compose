@@ -1,7 +1,7 @@
-package com.levox.domain.usecases
+package com.levox.domain.usecase
 
-import com.levox.domain.entities.ShopItem
-import com.levox.domain.repositories.ShopItemRepository
+import com.levox.domain.entity.ShopItem
+import com.levox.domain.repository.ShopItemRepository
 
 class AddItemUseCase(
     private val repository: ShopItemRepository

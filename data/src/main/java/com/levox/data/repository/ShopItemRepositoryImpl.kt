@@ -1,7 +1,7 @@
-package com.levox.data.repositories
+package com.levox.data.repository
 
-import com.levox.domain.entities.ShopItem
-import com.levox.domain.repositories.ShopItemRepository
+import com.levox.domain.entity.ShopItem
+import com.levox.domain.repository.ShopItemRepository
 
 class ShopItemRepositoryImpl : ShopItemRepository {
     override fun addItem(shopItem: ShopItem) {

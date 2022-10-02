@@ -1,6 +1,6 @@
-package com.levox.domain.repositories
+package com.levox.domain.repository
 
-import com.levox.domain.entities.ShopItem
+import com.levox.domain.entity.ShopItem
 
 interface ShopItemRepository {
     fun addItem(shopItem: ShopItem)

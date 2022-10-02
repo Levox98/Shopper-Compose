@@ -1,4 +1,4 @@
-package com.levox.domain.entities
+package com.levox.domain.entity
 
 data class ShopItem(
     val name: String,
