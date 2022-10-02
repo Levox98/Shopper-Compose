@@ -6,5 +6,5 @@ import com.levox.domain.repository.ShopItemRepository
 class AddItemUseCase(
     private val repository: ShopItemRepository
 ) {
-    operator fun invoke(shopItem: ShopItem) = repository.addItem(shopItem)
+    suspend operator fun invoke(shopItem: ShopItem) = repository.addItem(shopItem)
 }

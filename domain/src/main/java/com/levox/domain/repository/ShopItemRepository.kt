@@ -3,6 +3,6 @@ package com.levox.domain.repository
 import com.levox.domain.entity.ShopItem
 
 interface ShopItemRepository {
-    fun addItem(shopItem: ShopItem)
-    fun deleteItem(shopItem: ShopItem)
+    suspend fun addItem(shopItem: ShopItem)
+    suspend fun deleteItem(shopItemId: Int)
 }
