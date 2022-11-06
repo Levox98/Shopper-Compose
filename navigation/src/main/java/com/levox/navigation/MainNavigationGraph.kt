@@ -11,7 +11,7 @@ sealed class MainNavigationGraph : BaseNav() {
         override val first = true
     }
 
-    class ItemScreen(itemId: Int) : MainNavigationGraph() {
+    class ItemScreen(itemId: Int = 0) : MainNavigationGraph() {
         override val route = "MainScreen/Item/{itemId}"
         override val first = false
         override val url = "MainScreen/Item/${itemId}"
