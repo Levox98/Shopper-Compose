@@ -1,4 +1,4 @@
-package com.levox.composeshopper.ui.theme
+package com.levox.base_ui.theme
 
 import androidx.compose.ui.graphics.Color
 
