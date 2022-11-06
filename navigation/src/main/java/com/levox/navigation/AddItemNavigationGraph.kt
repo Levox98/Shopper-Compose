@@ -6,7 +6,7 @@ sealed class AddItemNavigationGraph : BaseNav() {
         override val first = true
     }
 
-    object AddItemScreen : AddItemNavigationGraph() {
+    object MainScreen : AddItemNavigationGraph() {
         override val route = "AddItemScreen"
         override val first = true
     }
