@@ -38,6 +38,7 @@ android {
 
 dependencies {
     implementation(project(":navigation"))
+    implementation(project(":base-ui"))
     implementation(project(":ui-shopping-item"))
 
     implementation 'androidx.core:core-ktx:1.7.0'
