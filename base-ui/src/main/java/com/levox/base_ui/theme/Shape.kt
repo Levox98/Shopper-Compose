@@ -1,11 +1,9 @@
 package com.levox.base_ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Shapes
 import androidx.compose.ui.unit.dp
 
-val Shapes = Shapes(
-    small = RoundedCornerShape(4.dp),
-    medium = RoundedCornerShape(4.dp),
-    large = RoundedCornerShape(0.dp)
-)
+val shapeSmall = RoundedCornerShape(4.dp)
+val shapeMedium = RoundedCornerShape(8.dp)
+val shapeLarge = RoundedCornerShape(24.dp)
+val shapeRounded = RoundedCornerShape(50)

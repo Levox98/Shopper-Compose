@@ -1,28 +1,55 @@
 package com.levox.base_ui.theme
 
-import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.levox.base_ui.R
 
-// Set of Material typography styles to start with
-val Typography = Typography(
-    body1 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
+private val appFontFamily = FontFamily(
+    fonts = listOf(
+        Font(
+            resId = R.font.roboto_bold,
+            weight = FontWeight.W700,
+            style = FontStyle.Normal
+        ),
+        Font(
+            resId = R.font.roboto_regular,
+            weight = FontWeight.Normal,
+            style = FontStyle.Normal
+        ),
+        Font(
+            resId = R.font.roboto_medium,
+            weight = FontWeight.Medium,
+            style = FontStyle.Normal
+        ),
+        Font(
+            resId = R.font.roboto_light,
+            weight = FontWeight.Light,
+            style = FontStyle.Normal
+        ),
+        Font(
+            resId = R.font.roboto_medium_italic,
+            weight = FontWeight.Normal,
+            style = FontStyle.Italic
+        ),
     )
-    /* Other default text styles to override
-    button = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.W500,
-        fontSize = 14.sp
-    ),
-    caption = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 12.sp
-    )
-    */
 )
+
+private val defaultTextStyle = TextStyle(
+    fontFamily = appFontFamily,
+    fontStyle = FontStyle.Normal
+)
+
+val typoH0 = defaultTextStyle.copy(fontSize = 30.sp, fontWeight = FontWeight.Medium)
+val typoH1 = defaultTextStyle.copy(fontSize = 20.sp, fontWeight = FontWeight.Medium)
+val typoH2 = defaultTextStyle.copy(fontSize = 16.sp, fontWeight = FontWeight.Medium)
+val typoH3 = defaultTextStyle.copy(fontSize = 16.sp, fontWeight = FontWeight.Bold)
+val typoBody1 = defaultTextStyle.copy(fontSize = 14.sp, fontWeight = FontWeight.Normal)
+val typoBody2 = defaultTextStyle.copy(fontSize = 15.sp, fontWeight = FontWeight.Normal)
+val typoTitle1 = defaultTextStyle.copy(fontSize = 12.sp, fontWeight = FontWeight.Bold)
+val typoTitle2 = defaultTextStyle.copy(fontSize = 12.sp, fontWeight = FontWeight.Medium)
+val typoTitle3 = defaultTextStyle.copy(fontSize = 11.sp, fontWeight = FontWeight.Normal)
+val typoButton1 = defaultTextStyle.copy(fontSize = 15.sp, fontWeight = FontWeight.Medium)
